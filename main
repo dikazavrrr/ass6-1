@@ -1,0 +1,12 @@
+package ass6;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Single.getSingle().addInfo("Teacher");
+        Single.getSingle().addInfo("Students");
+        Single.getSingle().printFile();
+    }
+}
