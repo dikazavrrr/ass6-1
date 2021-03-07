@@ -1,0 +1,26 @@
+package ass6;
+
+public class Single {
+	private static Single single;
+	private static String S = "Hi! \n";
+	
+	 public static synchronized Single getSingle() {
+	        if (single == null) {
+	            single = new Single();
+	        }
+
+	        return single;
+	    }
+
+	    private Single() {
+	    }
+
+	    public void addInfo(String info) {
+	        S = S + info + "\n";
+	    }
+
+	    public void printFile() {
+	        System.out.println(S);
+	    }
+}
+
